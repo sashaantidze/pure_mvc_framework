@@ -1,0 +1,30 @@
+{
+  "Guest" :{
+    "denied" : {},
+    "HomeController" : ["*"],
+    "RegisterController" : ["index", "login", "register"],
+    "RestrictedController" : ["*"]
+  },
+
+  "LoggedIn" : {
+    "denied" : {
+      "RegisterController" : ["login", "register"]
+    },
+    "RegisterController" : ["logout", "profile"],
+    "ToolsController" : ["*"],
+    "ContactsController" : ["*"]
+  },
+  
+  "noTools" : {
+	"denied" : {
+      "ToolsController" : ["index", "first", "second", "third"]
+    }
+  },
+  
+  "oneTool" : {
+	"denied" : {
+      "ToolsController" : ["index", "first", "third"]
+    }
+  }
+  
+}

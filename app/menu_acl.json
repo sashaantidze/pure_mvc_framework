@@ -1,0 +1,19 @@
+{
+
+  "Home" : "home",
+  "Tools" : {
+    "My tools" : "tools/index",
+	"separator" : "",
+    "Tool 1" : "tools/first",
+    "Tool 2" : "tools/second",
+    "Tool 3" : "tools/third"
+  },
+  "Contacts" : {
+  	"My contacts" : "contacts",
+  	"Add contact" : "contacts/add"
+  },
+  "Login" : "register/login",
+  "Register" : "register/register",
+  "Logout" : "register/logout"
+
+}

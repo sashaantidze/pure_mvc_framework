@@ -1,0 +1,18 @@
+.red{
+	color: red;
+}
+
+.form-errors{
+	border-radius: 8px;
+	margin: 10px 25px 45px 25px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.td-loading{
+	background-color: rgba(1,1,1,0.15);
+  box-shadow: inset 1px 0px 20px 8px #adadad;
+}
+
+.hidden{
+	display: none;
+}
