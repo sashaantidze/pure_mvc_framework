@@ -62,7 +62,7 @@ class DB
 	}
 
 
-	protected function _read($table, $params = [], $class)
+	protected function _read($table, $params, $class)
 	{
 		$conditionString = '';
 		$columnString = '*';

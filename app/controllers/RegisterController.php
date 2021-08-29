@@ -3,6 +3,7 @@ namespace App\controllers;
 use Core\Controller;
 use Core\Session;
 use Core\Router;
+use Core\H;
 use App\models\Users;
 use App\models\Login;
 
@@ -67,6 +68,7 @@ class RegisterController extends Controller
     $newUser = new Users();
     if($this->request->isPost()){
       $this->request->csrfCheck();
+      //H::dnd($this->request->get(), true);
       $newUser->assign($this->request->get());
       $newUser->setConfirm($this->request->get('confirm'));
       if($newUser->save()){
